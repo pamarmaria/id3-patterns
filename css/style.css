@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
-  color: #1e1e1e;
-  background-color: #e1e1e1;
-  font-weight: 400;
+  font-family: 'Roboto Black', sans-serif;
+  color: #343434;
+  background-color: #F2F2F2;
+  font-weight: 900;
 }
 
 h1,
@@ -49,38 +49,35 @@ ul.colors {
   position: relative;
   padding-top: 30px;
   margin: 0 auto;
-  margin-bottom: 75px;
-  text-align: center;
-  list-style: none;
+  margin-bottom: 80px;
 }
 
 button,
 .btn {
   display: inline-block;
   padding: 0 16px;
-  background-color: #C7EDC2;
-  color: #1e1e1e;
+  background-color: #CDB4FF;
+  color: #343434;
   text-decoration: none;
-  border: 1px solid #a2a2a2;
+  border: 2px solid #343434;
   line-height: 2;
-  text-transform: uppercase;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
 button:hover,
 .btn:hover {
-  background-color: #C7D6BA;
+  background-color: #F2F2F2;
 }
 
 .btn--secondary {
-  background-color: #dadada;
+  background-color: #F2F2F2;
 }
 .btn--secondary:hover {
-  background-color: white;
+  background-color: #B3FEC9;
 }
 
 
@@ -89,54 +86,49 @@ code {
   font-weight: 400;
   padding: 0 8px;
   font-size: 0.8em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 /* ---> UTILITIES */
 
 /* Colors */
-.colorCircle {
+.colorSquare {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
+  border: 2px solid #343434;
 }
 
 .colorHex {
   position: relative;
   color: #D1D1D1;
   top: 120px;
-  right: 6px;
 }
 
 .color-1 {
-  background-color: rgb(199, 214, 186);
+  background-color: #343434;
 }
 
 .color-2 {
-  background-color: rgb(186, 227, 194);
+  background-color: #F2F2F2;
 }
 
 .color-3 {
-  background-color: rgb(199, 237, 194);
+  background-color: #CDB4FF;
 }
 
 .color-4 {
-  background-color: rgb(229, 237, 194);
-}
-
-.color-5 {
-  background-color: rgb(227, 225, 186);
+  background-color: #B3FEC9;
 }
 
 /* Own styles, these are only for styling THIS page */
 
 .pattern-content {
   max-width: 1000px;
-  padding: 16px;
+  padding: 30px;
   margin: 16px auto;
-  background-color: white;
-  border-radius: 8px;
+  background-color: #F2F2F2;
+  border: 2px solid #343434;
 }
 
 .pattern-section {
@@ -159,10 +151,5 @@ code {
 }
 
 .pattern-title {
-  border-bottom: 1px solid #e1e1e1;
   opacity: 0.6;
-}
-
-[data-header]:before {
-  content: attr(data-header) ": ";
 }
