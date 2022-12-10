@@ -80,6 +80,60 @@ button:hover,
   background-color: #B3FEC9;
 }
 
+input:focus {
+  background-color: white;
+}
+
+/* No se como cambiar el borde morado y redondeado al hacer focus */
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+input[id="message"] {
+  padding: 5px 125px 60px 25px;
+}
+
+/* Diria que esto de arriba es un poco chapuza. Mi intención era que el campo para escribir el texto fuese más alto */
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #B3FEC9;
+}
+
+/* Cómo hacer para que aparezca el icono de check? */
+   
+.accepted {
+  background-color: #B3FEC9;
+  display: none
+}
+
+.toggler:checked + .accepted {
+  display: block;
+}
+
+input {
+  display: block;
+  margin: 15px 0;
+  padding: 5px 125px 5px 25px;
+  background-color: #F2F2F2;
+  color: #343434;
+  text-decoration: none;
+  border: 2px solid #343434;
+  line-height: 2;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
 
 code {
   background-color: #e1e1e1;
